@@ -9,7 +9,7 @@
 ![Render](https://img.shields.io/badge/Deployed--On-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)
 ![Status](https://img.shields.io/badge/Deployment-Live%20%E2%9C%94-10B981?style=for-the-badge)
 
-### 🚀 **[Experience Live Web Dashboard Demo](https://micro-donation-rfm-dashboard.onrender.com)** 🚀
+### 🚀 **[Experience Live Web Dashboard Demo](https://pulsedonor-micro-donation-rfm-analytics.onrender.com/)** 🚀
 
 *An enterprise-grade Machine Learning solution for humanitarian donation analytics, dynamic RFM feature extraction, K-Means cluster profiling, real-time donor persona classification, and glassmorphism visual intelligence.*
 
