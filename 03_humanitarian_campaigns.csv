@@ -1,0 +1,251 @@
+campaign_id,campaign_name,campaign_category,priority_level,target_amount
+1001,Humanitarian Aid Campaign 1001,Healthcare,High,249083.74
+1002,Humanitarian Aid Campaign 1002,Livelihood,Low,132863.6
+1003,Humanitarian Aid Campaign 1003,Food Security,Medium,128977.32
+1004,Humanitarian Aid Campaign 1004,Shelter,High,68449.93
+1005,Humanitarian Aid Campaign 1005,Shelter,Medium,21587.15
+1006,Humanitarian Aid Campaign 1006,Water & Sanitation,Medium,121098.47
+1007,Humanitarian Aid Campaign 1007,Education,Low,37986.82
+1008,Humanitarian Aid Campaign 1008,Healthcare,Medium,183574.52
+1009,Humanitarian Aid Campaign 1009,Emergency Relief,High,70881.04
+1010,Humanitarian Aid Campaign 1010,Food Security,Medium,18768.49
+1011,Humanitarian Aid Campaign 1011,Water & Sanitation,Medium,33416.29
+1012,Humanitarian Aid Campaign 1012,Healthcare,Medium,120281.48
+1013,Humanitarian Aid Campaign 1013,Education,High,17538.24
+1014,Humanitarian Aid Campaign 1014,Shelter,High,108019.95
+1015,Humanitarian Aid Campaign 1015,Healthcare,Low,29936.81
+1016,Humanitarian Aid Campaign 1016,Food Security,Medium,221753.95
+1017,Humanitarian Aid Campaign 1017,Education,Medium,148959.3
+1018,Humanitarian Aid Campaign 1018,Education,Medium,64555.78
+1019,Humanitarian Aid Campaign 1019,Healthcare,High,149284.45
+1020,Humanitarian Aid Campaign 1020,Healthcare,High,30338.67
+1021,Humanitarian Aid Campaign 1021,Healthcare,Medium,25118.73
+1022,Humanitarian Aid Campaign 1022,Education,Medium,40549.13
+1023,Humanitarian Aid Campaign 1023,Education,High,57667.64
+1024,Humanitarian Aid Campaign 1024,Water & Sanitation,Medium,218884.37
+1025,Humanitarian Aid Campaign 1025,Emergency Relief,Low,13215.71
+1026,Humanitarian Aid Campaign 1026,Livelihood,Low,121049.3
+1027,Humanitarian Aid Campaign 1027,Emergency Relief,Medium,45347.31
+1028,Humanitarian Aid Campaign 1028,Shelter,Medium,235366.05
+1029,Humanitarian Aid Campaign 1029,Shelter,High,170628.52
+1030,Humanitarian Aid Campaign 1030,Education,Low,115706.79
+1031,Humanitarian Aid Campaign 1031,Healthcare,Low,190244.63
+1032,Humanitarian Aid Campaign 1032,Shelter,Medium,66662.5
+1033,Humanitarian Aid Campaign 1033,Healthcare,Medium,161741.58
+1034,Humanitarian Aid Campaign 1034,Healthcare,Medium,125157.21
+1035,Humanitarian Aid Campaign 1035,Shelter,High,194425.29
+1036,Humanitarian Aid Campaign 1036,Emergency Relief,High,124270.9
+1037,Humanitarian Aid Campaign 1037,Education,High,126775.29
+1038,Humanitarian Aid Campaign 1038,Food Security,High,180464.69
+1039,Humanitarian Aid Campaign 1039,Education,Low,18001.51
+1040,Humanitarian Aid Campaign 1040,Shelter,High,192202.72
+1041,Humanitarian Aid Campaign 1041,Shelter,Medium,27946.99
+1042,Humanitarian Aid Campaign 1042,Water & Sanitation,Low,89512.58
+1043,Humanitarian Aid Campaign 1043,Food Security,Medium,45719.63
+1044,Humanitarian Aid Campaign 1044,Emergency Relief,Medium,209553.4
+1045,Humanitarian Aid Campaign 1045,Healthcare,High,22397.06
+1046,Humanitarian Aid Campaign 1046,Shelter,Medium,185179.89
+1047,Humanitarian Aid Campaign 1047,Education,Medium,78067.34
+1048,Humanitarian Aid Campaign 1048,Education,Low,235981.06
+1049,Humanitarian Aid Campaign 1049,Education,Medium,125514.64
+1050,Humanitarian Aid Campaign 1050,Education,High,56144.54
+1051,Humanitarian Aid Campaign 1051,Education,Medium,155220.94
+1052,Humanitarian Aid Campaign 1052,Education,High,69249.37
+1053,Humanitarian Aid Campaign 1053,Emergency Relief,High,146604.43
+1054,Humanitarian Aid Campaign 1054,Healthcare,Low,82656.44
+1055,Humanitarian Aid Campaign 1055,Healthcare,Medium,237921.19
+1056,Humanitarian Aid Campaign 1056,Shelter,Low,14209.02
+1057,Humanitarian Aid Campaign 1057,Healthcare,High,48890.45
+1058,Humanitarian Aid Campaign 1058,Shelter,High,211852.88
+1059,Humanitarian Aid Campaign 1059,Education,Medium,119100.54
+1060,Humanitarian Aid Campaign 1060,Healthcare,Medium,181301.24
+1061,Humanitarian Aid Campaign 1061,Education,High,147867.75
+1062,Humanitarian Aid Campaign 1062,Water & Sanitation,High,152021.4
+1063,Humanitarian Aid Campaign 1063,Education,Medium,218900.92
+1064,Humanitarian Aid Campaign 1064,Shelter,Low,117186.97
+1065,Humanitarian Aid Campaign 1065,Livelihood,High,113191.51
+1066,Humanitarian Aid Campaign 1066,Emergency Relief,High,148677.75
+1067,Humanitarian Aid Campaign 1067,Emergency Relief,High,150435.66
+1068,Humanitarian Aid Campaign 1068,Shelter,Medium,25093.92
+1069,Humanitarian Aid Campaign 1069,Healthcare,Medium,197545.44
+1070,Humanitarian Aid Campaign 1070,Education,Medium,220733.66
+1071,Humanitarian Aid Campaign 1071,Shelter,High,15049.85
+1072,Humanitarian Aid Campaign 1072,Food Security,Low,114277.06
+1073,Humanitarian Aid Campaign 1073,Healthcare,High,149739.01
+1074,Humanitarian Aid Campaign 1074,Education,Medium,49904.84
+1075,Humanitarian Aid Campaign 1075,Healthcare,Medium,83237.41
+1076,Humanitarian Aid Campaign 1076,Water & Sanitation,Medium,179701.67
+1077,Humanitarian Aid Campaign 1077,Healthcare,Low,110687.04
+1078,Humanitarian Aid Campaign 1078,Healthcare,High,170186.7
+1079,Humanitarian Aid Campaign 1079,Livelihood,High,93313.04
+1080,Humanitarian Aid Campaign 1080,Education,High,191280.95
+1081,Humanitarian Aid Campaign 1081,Emergency Relief,High,146559.24
+1082,Humanitarian Aid Campaign 1082,Food Security,Medium,21174.13
+1083,Humanitarian Aid Campaign 1083,Shelter,Medium,97259.97
+1084,Humanitarian Aid Campaign 1084,Livelihood,Medium,201807.68
+1085,Humanitarian Aid Campaign 1085,Emergency Relief,Medium,193595.76
+1086,Humanitarian Aid Campaign 1086,Water & Sanitation,Medium,22617.19
+1087,Humanitarian Aid Campaign 1087,Healthcare,High,115503.35
+1088,Humanitarian Aid Campaign 1088,Shelter,Medium,34106.77
+1089,Humanitarian Aid Campaign 1089,Healthcare,Low,167947.98
+1090,Humanitarian Aid Campaign 1090,Water & Sanitation,Medium,181332.51
+1091,Humanitarian Aid Campaign 1091,Water & Sanitation,Medium,237580.29
+1092,Humanitarian Aid Campaign 1092,Shelter,Medium,102786.25
+1093,Humanitarian Aid Campaign 1093,Emergency Relief,Medium,112912.41
+1094,Humanitarian Aid Campaign 1094,Livelihood,High,167008.79
+1095,Humanitarian Aid Campaign 1095,Livelihood,Medium,81027.64
+1096,Humanitarian Aid Campaign 1096,Emergency Relief,Low,243469.8
+1097,Humanitarian Aid Campaign 1097,Healthcare,Low,12770.46
+1098,Humanitarian Aid Campaign 1098,Shelter,High,236270.27
+1099,Humanitarian Aid Campaign 1099,Shelter,Medium,205210.82
+1100,Humanitarian Aid Campaign 1100,Emergency Relief,Low,191134.9
+1101,Humanitarian Aid Campaign 1101,Livelihood,Medium,226988.62
+1102,Humanitarian Aid Campaign 1102,Shelter,Low,179147.56
+1103,Humanitarian Aid Campaign 1103,Education,Medium,166319.81
+1104,Humanitarian Aid Campaign 1104,Shelter,Low,176227.08
+1105,Humanitarian Aid Campaign 1105,Education,High,70577.21
+1106,Humanitarian Aid Campaign 1106,Shelter,Low,197024.28
+1107,Humanitarian Aid Campaign 1107,Education,Medium,14551.96
+1108,Humanitarian Aid Campaign 1108,Education,Medium,57314.04
+1109,Humanitarian Aid Campaign 1109,Emergency Relief,High,147612.47
+1110,Humanitarian Aid Campaign 1110,Water & Sanitation,High,201809.65
+1111,Humanitarian Aid Campaign 1111,Food Security,High,133820.7
+1112,Humanitarian Aid Campaign 1112,Healthcare,Medium,41665.11
+1113,Humanitarian Aid Campaign 1113,Emergency Relief,High,95255.81
+1114,Humanitarian Aid Campaign 1114,Water & Sanitation,Medium,101408.62
+1115,Humanitarian Aid Campaign 1115,Education,Medium,39201.99
+1116,Humanitarian Aid Campaign 1116,Healthcare,Medium,57116.82
+1117,Humanitarian Aid Campaign 1117,Shelter,Medium,39282.06
+1118,Humanitarian Aid Campaign 1118,Healthcare,High,137723.3
+1119,Humanitarian Aid Campaign 1119,Education,Low,13353.57
+1120,Humanitarian Aid Campaign 1120,Food Security,Medium,240306.3
+1121,Humanitarian Aid Campaign 1121,Shelter,High,220115.21
+1122,Humanitarian Aid Campaign 1122,Shelter,Medium,192306.57
+1123,Humanitarian Aid Campaign 1123,Education,High,164526.26
+1124,Humanitarian Aid Campaign 1124,Education,Low,99240.57
+1125,Humanitarian Aid Campaign 1125,Livelihood,Medium,210031.41
+1126,Humanitarian Aid Campaign 1126,Shelter,Low,73944.5
+1127,Humanitarian Aid Campaign 1127,Water & Sanitation,Medium,139857.94
+1128,Humanitarian Aid Campaign 1128,Shelter,Medium,31165.01
+1129,Humanitarian Aid Campaign 1129,Livelihood,Medium,110177.42
+1130,Humanitarian Aid Campaign 1130,Emergency Relief,Low,194866.34
+1131,Humanitarian Aid Campaign 1131,Food Security,High,55597.16
+1132,Humanitarian Aid Campaign 1132,Shelter,Low,149792.83
+1133,Humanitarian Aid Campaign 1133,Healthcare,Medium,135055.09
+1134,Humanitarian Aid Campaign 1134,Livelihood,Medium,42839.53
+1135,Humanitarian Aid Campaign 1135,Water & Sanitation,Medium,24431.71
+1136,Humanitarian Aid Campaign 1136,Livelihood,Medium,245786.37
+1137,Humanitarian Aid Campaign 1137,Food Security,High,59891.35
+1138,Humanitarian Aid Campaign 1138,Livelihood,Medium,209989.25
+1139,Humanitarian Aid Campaign 1139,Healthcare,Medium,207568.22
+1140,Humanitarian Aid Campaign 1140,Water & Sanitation,Medium,121690.98
+1141,Humanitarian Aid Campaign 1141,Water & Sanitation,High,157055.42
+1142,Humanitarian Aid Campaign 1142,Food Security,Medium,170849.89
+1143,Humanitarian Aid Campaign 1143,Food Security,High,235395.62
+1144,Humanitarian Aid Campaign 1144,Food Security,Low,164258.76
+1145,Humanitarian Aid Campaign 1145,Emergency Relief,Medium,181704.42
+1146,Humanitarian Aid Campaign 1146,Water & Sanitation,Medium,235592.69
+1147,Humanitarian Aid Campaign 1147,Healthcare,Low,233188.29
+1148,Humanitarian Aid Campaign 1148,Livelihood,Low,71480.26
+1149,Humanitarian Aid Campaign 1149,Education,High,80892.53
+1150,Humanitarian Aid Campaign 1150,Emergency Relief,Low,211164.02
+1151,Humanitarian Aid Campaign 1151,Food Security,Low,181825.25
+1152,Humanitarian Aid Campaign 1152,Education,High,31337.37
+1153,Humanitarian Aid Campaign 1153,Education,High,225083.99
+1154,Humanitarian Aid Campaign 1154,Education,High,177636.51
+1155,Humanitarian Aid Campaign 1155,Emergency Relief,Medium,101774.36
+1156,Humanitarian Aid Campaign 1156,Shelter,High,135854.03
+1157,Humanitarian Aid Campaign 1157,Food Security,High,177222.48
+1158,Humanitarian Aid Campaign 1158,Food Security,Low,114505.63
+1159,Humanitarian Aid Campaign 1159,Healthcare,Medium,131617.41
+1160,Humanitarian Aid Campaign 1160,Livelihood,Medium,189287.29
+1161,Humanitarian Aid Campaign 1161,Shelter,Medium,67650.32
+1162,Humanitarian Aid Campaign 1162,Food Security,Low,70403.67
+1163,Humanitarian Aid Campaign 1163,Education,Medium,59517.78
+1164,Humanitarian Aid Campaign 1164,Water & Sanitation,High,60917.76
+1165,Humanitarian Aid Campaign 1165,Food Security,High,60165.65
+1166,Humanitarian Aid Campaign 1166,Water & Sanitation,Medium,80588.3
+1167,Humanitarian Aid Campaign 1167,Shelter,Medium,66031.14
+1168,Humanitarian Aid Campaign 1168,Healthcare,Medium,226217.23
+1169,Humanitarian Aid Campaign 1169,Food Security,Low,15020.46
+1170,Humanitarian Aid Campaign 1170,Shelter,Low,14366.32
+1171,Humanitarian Aid Campaign 1171,Food Security,Medium,201619.94
+1172,Humanitarian Aid Campaign 1172,Food Security,Medium,20006.19
+1173,Humanitarian Aid Campaign 1173,Healthcare,High,101534.61
+1174,Humanitarian Aid Campaign 1174,Healthcare,Low,124905.52
+1175,Humanitarian Aid Campaign 1175,Shelter,Low,73740.33
+1176,Humanitarian Aid Campaign 1176,Emergency Relief,High,220736.1
+1177,Humanitarian Aid Campaign 1177,Shelter,High,56335.8
+1178,Humanitarian Aid Campaign 1178,Shelter,Low,25288.04
+1179,Humanitarian Aid Campaign 1179,Healthcare,Medium,42512.93
+1180,Humanitarian Aid Campaign 1180,Education,Low,103338.06
+1181,Humanitarian Aid Campaign 1181,Healthcare,Medium,132947.53
+1182,Humanitarian Aid Campaign 1182,Food Security,Medium,217792.77
+1183,Humanitarian Aid Campaign 1183,Water & Sanitation,Medium,30507.75
+1184,Humanitarian Aid Campaign 1184,Shelter,High,16755.6
+1185,Humanitarian Aid Campaign 1185,Education,Low,72514.26
+1186,Humanitarian Aid Campaign 1186,Education,Medium,220194.77
+1187,Humanitarian Aid Campaign 1187,Water & Sanitation,High,58869.77
+1188,Humanitarian Aid Campaign 1188,Shelter,Low,95432.65
+1189,Humanitarian Aid Campaign 1189,Shelter,Low,171256.02
+1190,Humanitarian Aid Campaign 1190,Water & Sanitation,High,48910.16
+1191,Humanitarian Aid Campaign 1191,Livelihood,Medium,31911.06
+1192,Humanitarian Aid Campaign 1192,Water & Sanitation,Low,190301.62
+1193,Humanitarian Aid Campaign 1193,Water & Sanitation,Medium,102578.26
+1194,Humanitarian Aid Campaign 1194,Shelter,Medium,58198.46
+1195,Humanitarian Aid Campaign 1195,Shelter,Medium,151117.49
+1196,Humanitarian Aid Campaign 1196,Food Security,Low,188883.84
+1197,Humanitarian Aid Campaign 1197,Emergency Relief,Low,223678.41
+1198,Humanitarian Aid Campaign 1198,Education,Medium,145677.53
+1199,Humanitarian Aid Campaign 1199,Food Security,Medium,132948.13
+1200,Humanitarian Aid Campaign 1200,Emergency Relief,High,192639.0
+1201,Humanitarian Aid Campaign 1201,Emergency Relief,Medium,10324.97
+1202,Humanitarian Aid Campaign 1202,Healthcare,High,229614.68
+1203,Humanitarian Aid Campaign 1203,Livelihood,Low,76022.82
+1204,Humanitarian Aid Campaign 1204,Food Security,High,178758.3
+1205,Humanitarian Aid Campaign 1205,Livelihood,High,248714.31
+1206,Humanitarian Aid Campaign 1206,Shelter,High,116322.12
+1207,Humanitarian Aid Campaign 1207,Shelter,High,208173.67
+1208,Humanitarian Aid Campaign 1208,Shelter,High,212770.99
+1209,Humanitarian Aid Campaign 1209,Food Security,Medium,179311.42
+1210,Humanitarian Aid Campaign 1210,Healthcare,High,133985.49
+1211,Humanitarian Aid Campaign 1211,Shelter,Medium,236668.6
+1212,Humanitarian Aid Campaign 1212,Healthcare,Low,43561.63
+1213,Humanitarian Aid Campaign 1213,Shelter,Low,102094.14
+1214,Humanitarian Aid Campaign 1214,Healthcare,High,15721.63
+1215,Humanitarian Aid Campaign 1215,Emergency Relief,Low,102343.17
+1216,Humanitarian Aid Campaign 1216,Emergency Relief,Low,47200.54
+1217,Humanitarian Aid Campaign 1217,Healthcare,Low,102601.13
+1218,Humanitarian Aid Campaign 1218,Healthcare,Medium,184941.48
+1219,Humanitarian Aid Campaign 1219,Water & Sanitation,Medium,19531.99
+1220,Humanitarian Aid Campaign 1220,Food Security,Medium,232051.55
+1221,Humanitarian Aid Campaign 1221,Education,Medium,18601.11
+1222,Humanitarian Aid Campaign 1222,Education,Medium,68676.77
+1223,Humanitarian Aid Campaign 1223,Healthcare,High,192641.05
+1224,Humanitarian Aid Campaign 1224,Food Security,Medium,58457.28
+1225,Humanitarian Aid Campaign 1225,Water & Sanitation,Medium,113117.81
+1226,Humanitarian Aid Campaign 1226,Water & Sanitation,High,195787.79
+1227,Humanitarian Aid Campaign 1227,Water & Sanitation,Medium,157689.29
+1228,Humanitarian Aid Campaign 1228,Emergency Relief,Medium,148140.03
+1229,Humanitarian Aid Campaign 1229,Emergency Relief,Low,44271.51
+1230,Humanitarian Aid Campaign 1230,Food Security,Medium,27525.02
+1231,Humanitarian Aid Campaign 1231,Water & Sanitation,Medium,35643.96
+1232,Humanitarian Aid Campaign 1232,Shelter,High,57441.14
+1233,Humanitarian Aid Campaign 1233,Food Security,Low,141750.3
+1234,Humanitarian Aid Campaign 1234,Shelter,High,140749.19
+1235,Humanitarian Aid Campaign 1235,Livelihood,High,183950.61
+1236,Humanitarian Aid Campaign 1236,Shelter,High,11551.09
+1237,Humanitarian Aid Campaign 1237,Food Security,High,144243.05
+1238,Humanitarian Aid Campaign 1238,Education,High,240886.91
+1239,Humanitarian Aid Campaign 1239,Emergency Relief,High,228036.03
+1240,Humanitarian Aid Campaign 1240,Water & Sanitation,High,109230.96
+1241,Humanitarian Aid Campaign 1241,Water & Sanitation,High,230324.06
+1242,Humanitarian Aid Campaign 1242,Water & Sanitation,High,174200.52
+1243,Humanitarian Aid Campaign 1243,Education,Medium,44570.11
+1244,Humanitarian Aid Campaign 1244,Education,High,171525.43
+1245,Humanitarian Aid Campaign 1245,Education,Medium,197905.01
+1246,Humanitarian Aid Campaign 1246,Livelihood,High,187406.18
+1247,Humanitarian Aid Campaign 1247,Food Security,Medium,46365.66
+1248,Humanitarian Aid Campaign 1248,Healthcare,Low,57495.58
+1249,Humanitarian Aid Campaign 1249,Livelihood,Low,21737.0
+1250,Humanitarian Aid Campaign 1250,Water & Sanitation,Low,116443.11

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humanitarian Micro-Donation RFM Analytics & Donor Segmentation</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Plotly.js & Chart.js CDN -->
+    <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body class="dark-theme">
+
+    <div class="app-container">
+        
+        <!-- Header Banner -->
+        <header class="app-header glass-card">
+            <div class="header-main">
+                <div class="header-title-box">
+                    <div class="logo-badge">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <div>
+                        <h1>Micro-Donation Donor Intelligence & Segmentation</h1>
+                        <p class="subtitle">Humanitarian RFM Machine Learning Analytics Dashboard</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <div class="model-status-pill">
+                        <span class="status-dot green-pulse"></span>
+                        <span>Model: K-Means (k=4) | Scaler: StandardScaler</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="refreshDashboard()">
+                        <i class="fa-solid fa-arrows-rotate"></i> Refresh
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- KPI Metrics Banner -->
+        <section class="kpi-banner">
+            <div class="kpi-card glass-card">
+                <div class="kpi-icon blue"><i class="fa-solid fa-users"></i></div>
+                <div class="kpi-details">
+                    <span class="kpi-label">Total Registered Donors</span>
+                    <h2 id="kpi-total-donors" class="kpi-val">--</h2>
+                    <span class="kpi-sub"><i class="fa-solid fa-circle-check text-green"></i> 100% Verified IDs</span>
+                </div>
+            </div>
+            
+            <div class="kpi-card glass-card">
+                <div class="kpi-icon green"><i class="fa-solid fa-sack-dollar"></i></div>
+                <div class="kpi-details">
+                    <span class="kpi-label">Total Monies Raised</span>
+                    <h2 id="kpi-total-monetary" class="kpi-val">$--</h2>
+                    <span class="kpi-sub"><i class="fa-solid fa-arrow-trend-up text-green"></i> Successful Payments</span>
+                </div>
+            </div>
+
+            <div class="kpi-card glass-card">
+                <div class="kpi-icon purple"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="kpi-details">
+                    <span class="kpi-label">Avg Donation per Donor</span>
+                    <h2 id="kpi-avg-donation" class="kpi-val">$--</h2>
+                    <span class="kpi-sub">Across all micro-donations</span>
+                </div>
+            </div>
+
+            <div class="kpi-card glass-card">
+                <div class="kpi-icon amber"><i class="fa-solid fa-receipt"></i></div>
+                <div class="kpi-details">
+                    <span class="kpi-label">Total Successful Txs</span>
+                    <h2 id="kpi-total-txs" class="kpi-val">--</h2>
+                    <span class="kpi-sub"><i class="fa-solid fa-shield-halved text-amber"></i> 97.0% Success Rate</span>
+                </div>
+            </div>
+
+            <div class="kpi-card glass-card">
+                <div class="kpi-icon cyan"><i class="fa-solid fa-earth-americas"></i></div>
+                <div class="kpi-details">
+                    <span class="kpi-label">Top Donor Country</span>
+                    <h2 id="kpi-top-country" class="kpi-val">--</h2>
+                    <span class="kpi-sub">Highest donor origin</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Dashboard Tabs -->
+        <nav class="nav-tabs glass-card">
+            <button class="tab-btn active" onclick="switchTab('overview')">
+                <i class="fa-solid fa-chart-pie"></i> Executive Overview & 3D RFM Clusters
+            </button>
+            <button class="tab-btn" onclick="switchTab('demographics')">
+                <i class="fa-solid fa-globe"></i> Demographics & Campaign Analytics
+            </button>
+            <button class="tab-btn" onclick="switchTab('directory')">
+                <i class="fa-solid fa-address-book"></i> Interactive Donor Directory
+            </button>
+            <button class="tab-btn" onclick="switchTab('predictor')">
+                <i class="fa-solid fa-wand-magic-sparkles"></i> RFM Predictor & Donor Lookup
+            </button>
+        </nav>
+
+        <!-- TAB 1: EXECUTIVE OVERVIEW -->
+        <main id="tab-overview" class="tab-content active">
+            <div class="dashboard-grid grid-2">
+                <!-- 3D Scatter Plot Card -->
+                <div class="chart-card glass-card full-span">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title"><i class="fa-solid fa-cube"></i> 3D RFM Cluster Segmentation Space</h3>
+                            <p class="card-desc">Interactive 3D visualization mapping Recency (Days), Frequency (Count), and Monetary ($) with K-Means Clusters</p>
+                        </div>
+                        <div class="card-actions">
+                            <span class="badge info">Interactive 3D View</span>
+                        </div>
+                    </div>
+                    <div id="plotly-3d-scatter" class="plot-container-large"></div>
+                </div>
+
+                <!-- Segment Monetary Split Pie -->
+                <div class="chart-card glass-card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fa-solid fa-chart-pie"></i> Donor Segment Distribution (%)</h3>
+                    </div>
+                    <div class="chart-wrapper">
+                        <canvas id="chart-segment-donors"></canvas>
+                    </div>
+                </div>
+
+                <!-- Segment Monetary Split Bar -->
+                <div class="chart-card glass-card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fa-solid fa-money-bill-wave"></i> Monetary Total ($) per Persona Segment</h3>
+                    </div>
+                    <div class="chart-wrapper">
+                        <canvas id="chart-segment-monetary"></canvas>
+                    </div>
+                </div>
+
+                <!-- Persona Cards Table -->
+                <div class="chart-card glass-card full-span">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fa-solid fa-id-card"></i> Persona Profile & Actionable Marketing Strategies</h3>
+                    </div>
+                    <div class="persona-grid" id="persona-cards-container">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- TAB 2: DEMOGRAPHICS & CAMPAIGNS -->
+        <main id="tab-demographics" class="tab-content">
+            <div class="dashboard-grid grid-2">
+                <div class="chart-card glass-card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fa-solid fa-flag"></i> Top 10 Donor Origin Countries</h3>
+                    </div>
+                    <div class="chart-wrapper">
+                        <canvas id="chart-countries"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-card glass-card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fa-solid fa-building-user"></i> Donor Type Breakdown</h3>
+                    </div>
+                    <div class="chart-wrapper">
+                        <canvas id="chart-donor-types"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-card glass-card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fa-solid fa-hand-holding-medical"></i> Campaign Category Funds Raised ($)</h3>
+                    </div>
+                    <div class="chart-wrapper">
+                        <canvas id="chart-campaign-categories"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-card glass-card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fa-solid fa-timeline"></i> Monthly Donation Volume Trends</h3>
+                    </div>
+                    <div class="chart-wrapper">
+                        <canvas id="chart-monthly-trends"></canvas>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- TAB 3: DONOR DIRECTORY TABLE -->
+        <main id="tab-directory" class="tab-content">
+            <div class="table-card glass-card">
+                <div class="table-header">
+                    <div class="search-filter-row">
+                        <div class="search-box">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="search-input" placeholder="Search by Donor ID, Country..." onkeyup="filterDirectory()">
+                        </div>
+
+                        <div class="filter-group">
+                            <label><i class="fa-solid fa-filter"></i> Segment:</label>
+                            <select id="filter-segment" onchange="filterDirectory()">
+                                <option value="All">All Segments</option>
+                                <option value="Champions">Champions</option>
+                                <option value="Loyal Donors">Loyal Donors</option>
+                                <option value="Potential Loyalists">Potential Loyalists</option>
+                                <option value="At-Risk / Hibernating">At-Risk / Hibernating</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-group">
+                            <label><i class="fa-solid fa-building"></i> Donor Type:</label>
+                            <select id="filter-donor-type" onchange="filterDirectory()">
+                                <option value="All">All Types</option>
+                                <option value="Individual">Individual</option>
+                                <option value="NGO">NGO</option>
+                                <option value="Small Business">Small Business</option>
+                            </select>
+                        </div>
+
+                        <button class="btn btn-outline" onclick="exportDirectoryCSV()">
+                            <i class="fa-solid fa-download"></i> Export CSV
+                        </button>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="data-table" id="donor-table">
+                        <thead>
+                            <tr>
+                                <th>Donor ID</th>
+                                <th>Age / Gender</th>
+                                <th>Country</th>
+                                <th>Type</th>
+                                <th>Recency (Days)</th>
+                                <th>Frequency</th>
+                                <th>Monetary Total ($)</th>
+                                <th>Avg Donation ($)</th>
+                                <th>RFM Code</th>
+                                <th>Segment Persona</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="donor-table-body">
+                            <!-- Populated dynamically via JS -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-pagination">
+                    <span id="pagination-info">Showing 1 to 15 of 5000 donors</span>
+                    <div class="pagination-controls">
+                        <button id="btn-prev-page" class="btn btn-sm" onclick="changePage(-1)"><i class="fa-solid fa-chevron-left"></i> Prev</button>
+                        <span id="current-page-num" class="page-num">1</span>
+                        <button id="btn-next-page" class="btn btn-sm" onclick="changePage(1)">Next <i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- TAB 4: RFM PREDICTOR TOOL -->
+        <main id="tab-predictor" class="tab-content">
+            <div class="dashboard-grid grid-2">
+                
+                <!-- Input Panel -->
+                <div class="predictor-card glass-card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fa-solid fa-sliders"></i> Real-Time RFM Segment Predictor</h3>
+                        <p class="card-desc">Enter donor parameters or lookup an existing donor ID to calculate log-transformed features, StandardScale values, and predict K-Means cluster persona.</p>
+                    </div>
+
+                    <form id="predictor-form" onsubmit="handlePredictSubmit(event)">
+                        
+                        <div class="mode-switch">
+                            <label><input type="radio" name="predict_mode" value="lookup" checked onchange="togglePredictMode()"> Lookup Existing Donor ID</label>
+                            <label><input type="radio" name="predict_mode" value="custom" onchange="togglePredictMode()"> Custom RFM Inputs</label>
+                        </div>
+
+                        <div id="lookup-group" class="form-group">
+                            <label for="input-donor-id"><i class="fa-solid fa-id-card"></i> Donor ID Lookup:</label>
+                            <input type="number" id="input-donor-id" placeholder="e.g. 100001" value="100001" min="100001" max="105000">
+                        </div>
+
+                        <div id="custom-group" class="custom-inputs-box hidden">
+                            <div class="form-group">
+                                <label for="input-recency"><i class="fa-solid fa-clock-rotate-left"></i> Recency (Days since last donation):</label>
+                                <input type="number" id="input-recency" value="15" min="1" max="1000">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input-frequency"><i class="fa-solid fa-repeat"></i> Frequency (Total transaction count):</label>
+                                <input type="number" id="input-frequency" value="8" min="1" max="100">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input-monetary"><i class="fa-solid fa-dollar-sign"></i> Monetary Total ($ sum of donations):</label>
+                                <input type="number" id="input-monetary" value="350" min="1" max="10000">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-accent btn-block">
+                            <i class="fa-solid fa-bolt"></i> Predict Donor Segment
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Prediction Output Result -->
+                <div class="predictor-result-card glass-card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fa-solid fa-bullseye"></i> Prediction Result & Strategy</h3>
+                    </div>
+
+                    <div id="prediction-output-box" class="prediction-output-body">
+                        <div class="result-placeholder">
+                            <i class="fa-solid fa-robot placeholder-icon"></i>
+                            <p>Submit donor parameters on the left to view instant ML segment classification & strategy recommendation.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Donor Detail Modal -->
+        <div id="donor-modal" class="modal-overlay hidden">
+            <div class="modal-content glass-card">
+                <div class="modal-header">
+                    <h3 id="modal-title"><i class="fa-solid fa-user-gear"></i> Donor Detail Profile</h3>
+                    <button class="modal-close" onclick="closeModal()">&times;</button>
+                </div>
+                <div class="modal-body" id="modal-body">
+                    <!-- Populated via JS -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <p>Humanitarian Micro-Donation Analytics & Donor Segmentation System &bull; Powered by Python, Scikit-Learn, K-Means Clustering & Plotly</p>
+        </footer>
+
+    </div>
+
+    <!-- Dashboard JS Script -->
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html>

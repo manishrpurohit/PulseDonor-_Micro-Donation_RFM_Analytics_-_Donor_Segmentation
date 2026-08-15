@@ -1,0 +1,29 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# IDE & OS configuration files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Scratch scripts & temporary build artifacts
+scratch/
+build/
+dist/
+*.egg-info/
